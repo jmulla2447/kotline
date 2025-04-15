@@ -4,7 +4,7 @@ import kotlin.properties.Delegates
 
 class User {
     var name: String by Delegates.observable("-") {
-            _, old, new ->
+            _, old, new -> // if prop is not used so we can use - instade of prop
         println("$old -> $new")
     }
 
